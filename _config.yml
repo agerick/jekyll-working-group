@@ -1,0 +1,17 @@
+# page_gen-dirs: true # uncomment, if you prefer to generate named folders
+# page_gen:
+#   - data: 'member'
+#     template: 'profile'
+#     name: 'full_name'
+#     dir: 'people'
+#   - data: 'pet'
+#     template: 'profile'
+#     name: 'full_name'
+#     dir: 'pets'
+list_of_collections_to_generate:
+    - 
+        data_file_name: test_animals
+        new_collection_name: test_animals
+        layout: animal
+        record_attr_for_filenames: id
+

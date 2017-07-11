@@ -1,0 +1,29 @@
+---
+title: DataGen Demo
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main Page</title>
+	<link rel="stylesheet" href="css/github-markdown.css">
+</head>
+<body>
+
+<h1>Animal Links, Generated from .csv data file</h1>
+
+<ul>
+{% for record in site.data.test_animals %}
+  <li><a href="test_animals/{{record.id}}">{{record.animal_name_in_language}}</a></li>
+{% endfor %}
+</ul>
+
+<h1>End</h1>
+
+</body>
+</html>
+
+
+
+
+
+
